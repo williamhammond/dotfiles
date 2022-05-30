@@ -1,0 +1,8 @@
+[user]
+	email = william.t.hammond@gmail.com
+	name = William Hammond
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
