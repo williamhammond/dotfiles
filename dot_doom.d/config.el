@@ -76,3 +76,4 @@
 ;; they are implemented.
 
 (!package modus-themes)
+(!package powershell)
