@@ -78,3 +78,19 @@
 (use-package lsp-mode
   :hook
   ((powershell-mode . lsp)))
+
+(setq lsp-zig-zls-executable "zls")
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (use-package! zig-mode                                               ;;
+;;   :hook ((zig-mode . lsp-deferred))                                  ;;
+;;   :custom (zig-format-on-save true)                                  ;;
+;;   :config                                                            ;;
+;;   (after! lsp-mode                                                   ;;
+;;     (add-to-list 'lsp-language-id-configuration '(zig-mode . "zig")) ;;
+;;     (lsp-register-client                                             ;;
+;;       (make-lsp-client                                               ;;
+;;         :new-connection (lsp-stdio-connection "zls")                 ;;
+;;         :major-modes '(zig-mode)                                     ;;
+;;         :server-id 'zls))))                                          ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
