@@ -75,5 +75,6 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
-(!package modus-themes)
-(!package powershell)
+(use-package lsp-mode
+  :hook
+  ((powershell-mode . lsp)))
